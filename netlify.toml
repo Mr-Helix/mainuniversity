@@ -1,0 +1,12 @@
+# netlify.toml
+
+# Configuration for your Angular build
+[build]
+  publish = "dist/pokemonbackupproject" # Change 'pokemonbackupproject' to your actual project name if different
+  command = "npm run build"
+
+# Configuration for Netlify Functions
+[functions]
+  directory = "netlify"
+  # Node.js 18 or 20 is typically used for Angular 17 projects
+  node_bundler = "esbuild"

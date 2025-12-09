@@ -5,13 +5,15 @@ import { AboutComponent } from './about/about.component';
 import { ItemsListComponent } from './items-list/items-list.component';
 import { PokemonDetailComponent } from './pokemon-detail/pokemon-detail.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { FeedbackComponent } from './feedback/feedback.component';
 
 const routes: Routes = [
   {'path': '', component: AboutComponent},
   {'path': 'items', component: ItemsComponent},
   {'path': 'items-list', component: ItemsListComponent},
-  {'path': 'pokemon/:name', component: PokemonDetailComponent }
-  ,{'path': 'gallery', component: GalleryComponent}
+  {'path': 'pokemon/:name', component: PokemonDetailComponent },
+  {'path': 'gallery', component: GalleryComponent},
+  {'path': 'feedback', component: FeedbackComponent}
 ];
 
 @NgModule({
