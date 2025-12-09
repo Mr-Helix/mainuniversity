@@ -1,0 +1,29 @@
+.item-card{
+  border: 3px solid rgb(236, 221, 0);
+  border-radius: 20px;
+  background: #454545;
+  box-shadow:  2px 2px 14px rgb(0, 110, 236);
+
+  background-color: rgba(0, 0, 0, 0.767);
+  width: 18rem;
+  margin: 1rem;
+
+  color: white;
+  text-align: center;
+  align-items: center;
+
+}
+.card-text{
+  padding: 1rem;
+
+line-height: 2;
+}
+.card-top-img{
+  width: 100px;
+  height: auto;
+  margin: auto;
+}
+
+.card-title{
+  font-size: 23px;
+}

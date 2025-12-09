@@ -1,0 +1,26 @@
+<header class="text-gray-400 bg-gray-900 body-font border-b-2 border-yellow-500">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
+        <a routerLink="/" routerLinkActive="active" 
+         [routerLinkActiveOptions]="{exact: true}"
+        class="mr-5 hover:text-white">About</a>
+        <a routerLink="/items-list" routerLinkActive="active"
+        [routerLinkActiveOptions]="{exact: true}"
+         class="mr-5 hover:text-white">Pokemon</a>
+        <a routerLink="/items"  routerLinkActive="active"
+        [routerLinkActiveOptions]="{exact: true}"
+         class="mr-5 hover:text-white">Items</a>
+
+        <a routerLink="/gallery" routerLinkActive="active"
+        [routerLinkActiveOptions]="{exact: true}"
+          class="mr-5 hover:text-white">Gallery</a>
+      </nav>
+
+      <a class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-white lg:items-center lg:justify-center mb-4 md:mb-0">
+        <img src="assets/poke.png" alt="" style="height: 90px;">
+      </a>
+      <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
+       
+      </div>
+    </div>
+</header>

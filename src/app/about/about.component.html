@@ -1,0 +1,50 @@
+<section class="text-gray-400 bg-gray-900 body-font">
+    <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+      <div class="center-btns">
+        <div class="btns-mobile">
+            <button (click)="togglePause(videoElement)">
+                <i *ngIf="!isPaused" class="bi bi-pause-circle"></i>
+                <i *ngIf="isPaused" class="bi bi-play-fill"></i>
+            </button>
+            <div class="hr"></div>
+            <button (click)="toggleMute(videoElement)">
+                <i *ngIf="!isMuted" class="bi bi-volume-up-fill"></i>
+                <i *ngIf="isMuted" class="bi bi-volume-mute-fill"></i>
+            </button>
+        </div>
+      </div>  
+      
+      
+      <div class="video-container"
+      data-aos="zoom-in"
+      data-aos-duration="1500"
+      data-aos-easing="ease-in-sine">
+            <video #videoElement autoplay loop >
+              <source src="assets/Pokemon.mp4" type="video/mp4" >
+            </video>
+            <div class="btns">
+              <button (click)="togglePause(videoElement)" class="pause-button">
+                  <i *ngIf="!isPaused" class="bi bi-pause-circle"></i>
+                  <i *ngIf="isPaused" class="bi bi-play-fill"></i>
+              </button>
+              <button (click)="toggleMute(videoElement)" class="mute-button">
+                  <i *ngIf="!isMuted" class="bi bi-volume-up-fill"></i>
+                  <i *ngIf="isMuted" class="bi bi-volume-mute-fill"></i>
+              </button>
+          </div>
+            
+        </div>
+          
+        
+      <div class="text-center lg:w-2/3 w-full">
+
+        <p class="leading-relaxed mb-8  text-xl">გამარჯობა! ეს პროექტი შევქმენი Angular-ში <span class="stroke-amber-700">PokéAPI</span>-ისა და <span class="stroke-cyan-700">TailWind</span> დახმარებით,  <i class="bi bi-emoji-smile-fill"></i></p>
+        <div class="flex justify-center flex-col">
+          <button (click)="scrollToTop()"  class="text-black bg-amber-400 rounded py-2 text-xl"><i class="bi bi-arrow-up-short"></i> Get familliar with the website <i class="bi bi-arrow-up-short"></i></button>
+        </div>
+      </div>
+    </div>
+
+
+    
+  </section>

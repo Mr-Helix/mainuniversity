@@ -1,0 +1,13 @@
+.pokemon-detail {
+    text-align: center;
+}
+  
+.pokemon-detail img {
+    max-width: 200px;
+}
+  
+.pokemon-detail ul {
+    list-style-type: none;
+    padding: 0;
+}
+  

@@ -1,0 +1,18 @@
+<div class="item-card" 
+data-aos="flip-left"
+data-aos-easing="ease-out-cubic"
+data-aos-duration="2000">
+  <img class="card-top-img" *ngIf="item.details" [src]="item.details.sprites.default" alt="{{ item.name }}">
+
+  <h1 class="card-title">{{ item.name }}</h1>
+
+  <hr style="border: 1px solid orange;">
+<br>
+
+  <div class="card-text" *ngIf="item.details" >
+    <p *ngFor="let effect of item.details.effect_entries">
+      {{ effect.effect }}
+    </p>
+  </div>
+<br>
+</div>

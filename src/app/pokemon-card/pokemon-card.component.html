@@ -1,0 +1,27 @@
+<div class="card" *ngIf="pokemon" 
+
+  data-aos="flip-down"
+  data-aos-duration="300"
+  >
+
+  <img *ngIf="pokemon.sprites?.front_default" 
+       [src]="pokemon.sprites.front_default" 
+       class="card-img-top" 
+       alt="{{ pokemon.name }}">
+  <div class="card-body">
+    <h5 class="card-title">{{ pokemon.name }}</h5>
+
+    <hr>
+    <br>
+
+    <p class="card-text">
+      Abilities: 
+      <br>
+      <span *ngFor="let ability of pokemon.abilities">
+        {{ ability.ability.name }}<span *ngIf="!isLastAbility(ability)">, </span>
+      </span>
+    </p>
+
+    <br>
+  </div>
+</div>
