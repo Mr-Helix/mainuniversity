@@ -19,6 +19,8 @@ import { ItemDetailComponent } from './item-detail/item-detail.component';
 import { FooterComponent } from './footer/footer.component';
 import { GalleryComponent } from './gallery/gallery.component';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
