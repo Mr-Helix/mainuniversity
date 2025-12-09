@@ -22,15 +22,12 @@ export class FeedbackComponent {
   feedbackSent = false;
   errorSending = false;
 
-  // Endpoint for the Netlify Function
   API_ENDPOINT = '/.netlify/functions/send-feedback';
 
-  // Constructor must inject HttpClient
   constructor(private http: HttpClient) { } 
 
-  // The onSubmit method called by (ngSubmit)
   onSubmit(form: NgForm) {
-    // Reset status messages
+
     this.feedbackSent = false;
     this.errorSending = false;
 
@@ -39,11 +36,10 @@ export class FeedbackComponent {
       return;
     }
 
-    // HTTP POST request
     this.http.post(this.API_ENDPOINT, form.value).subscribe({
       next: (response) => {
         this.feedbackSent = true;
-        form.resetForm(); // Clear the form on success
+        form.resetForm(); 
       },
       error: (error) => {
         this.errorSending = true;

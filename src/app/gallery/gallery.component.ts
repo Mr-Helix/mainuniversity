@@ -2,6 +2,11 @@ import { Component, AfterViewInit } from '@angular/core';
 import { interval } from 'rxjs';
 
 declare var Splide: any;
+declare global {
+  interface Window {
+    splide: any;
+  }
+}
 
 @Component({
   selector: 'app-gallery',
@@ -20,8 +25,13 @@ export class GalleryComponent implements AfterViewInit {
         focus: 'center',
         gap: '1rem',
         interval: 3000,
+        pagination: false,
+        easing: 'linear',
+  autoScroll: {
+          speed: 0.3,
 
-      }).mount();
+        },
+      }).mount(window.splide.Extensions);
     } else {
       console.error('Splide library not loaded from CDN.');
     }
