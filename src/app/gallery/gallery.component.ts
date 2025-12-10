@@ -31,10 +31,15 @@ export class GalleryComponent implements AfterViewInit {
           speed: 0.3,
         },
 breakpoints: {
-                767: { 
+                768: { 
                     perPage: 1,
                     gap: '0.5em',
                 },
+                1024: {
+                    perPage: 2,
+                    gap: '0.7em',
+                },
+
                 
               }
       }).mount(window.splide.Extensions);
