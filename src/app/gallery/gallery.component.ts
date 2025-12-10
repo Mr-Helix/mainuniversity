@@ -20,7 +20,7 @@ export class GalleryComponent implements AfterViewInit {
 
       new Splide('#pokemon-slider', {
         type: 'loop',
-        perPage: 3,
+        perPage: 4,
         autoplay: true,
         focus: 'center',
         gap: '1rem',
@@ -29,8 +29,14 @@ export class GalleryComponent implements AfterViewInit {
         easing: 'linear',
   autoScroll: {
           speed: 0.3,
-
         },
+breakpoints: {
+                767: { 
+                    perPage: 1,
+                    gap: '0.5em',
+                },
+                
+              }
       }).mount(window.splide.Extensions);
     } else {
       console.error('Splide library not loaded from CDN.');
