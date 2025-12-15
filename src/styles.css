@@ -2,16 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-
-@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
-*{
-    font-family: Reddit Mono;
+@import url("https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+* {
+  font-family: Reddit Mono;
 }
 
-body{
-    background-color: #8BC6EC;
-    background-image: linear-gradient(135deg, #7db2d8 0%, #9599E2 100%);
-    background-repeat: no-repeat;
-    
+body {
+  background-color: rgba(17, 24, 39, 1);
+  background-image: linear-gradient(135deg, #7db2d8 0%, #9599e2 100%);
+  background-repeat: no-repeat;
 }

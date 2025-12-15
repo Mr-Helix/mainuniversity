@@ -1,0 +1,29 @@
+<div class="p-6">
+  <h1 class="text-2xl text-white mb-4">Cart</h1>
+
+  <div *ngFor="let item of cartService.getCart()"
+       class="flex justify-between bg-gray-800 p-4 mb-3 rounded">
+
+    <span class="text-white">{{ item.name }}</span>
+
+    <div>
+      <button (click)="cartService.decreaseQty(item.id)">-</button>
+      {{ item.quantity }}
+      <button (click)="cartService.increaseQty(item.id)">+</button>
+    </div>
+
+    <span class="text-yellow-400">
+      {{ item.price * item.quantity! }}₽
+    </span>
+
+    <button
+      (click)="cartService.removeFromCart(item.id)"
+      class="text-red-500">
+      ✕
+    </button>
+  </div>
+
+  <h2 class="text-white mt-4">
+    Total: {{ cartService.getTotal() }}₽
+  </h2>
+</div>
