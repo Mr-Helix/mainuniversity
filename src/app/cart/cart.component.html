@@ -1,29 +1,42 @@
-<div class="p-6">
-  <h1 class="text-2xl text-white mb-4">Cart</h1>
+<div class="p-6 divide-y-2 divide-yellow-500">
+  <h1 class="text-3xl text-white mb-4">Shopping Cart</h1>
+
+  <h1>Your shopping cart is empty... for now! <span>Head to the Store to add some items!</span></h1>
+
 
   <div *ngFor="let item of cartService.getCart()"
-       class="flex justify-between bg-gray-800 p-4 mb-3 rounded">
+       class="item flex justify-between  p-4 mb-3 rounded ">
 
-    <span class="text-white">{{ item.name }}</span>
+    <div class="flex items-center space-x-4 ">
+        <img [src]="item.image" alt="{{ item.name }}" class=" w-40 h-40
+    sm:w-68 sm:h-68
+    object-contain rounded-lg bg-white p-2">
+    </div>
 
-    <div>
+    <span class="text-white flex items-center">{{ item.name }}</span>
+
+    <div class="flex items-center buttons">
       <button (click)="cartService.decreaseQty(item.id)">-</button>
       {{ item.quantity }}
       <button (click)="cartService.increaseQty(item.id)">+</button>
     </div>
 
-    <span class="text-yellow-400">
-      {{ item.price * item.quantity! }}₽
+    <span class="text-yellow-400 flex items-center">
+      {{ item.price * item.quantity! }} <i class="bi bi-currency-dollar"></i>
     </span>
 
     <button
       (click)="cartService.removeFromCart(item.id)"
-      class="text-red-500">
-      ✕
+      class="remove text-red-500 text-2xl" >
+      <i class="bi bi-trash-fill"></i>
     </button>
   </div>
 
+
+
   <h2 class="text-white mt-4">
-    Total: {{ cartService.getTotal() }}₽
+    <p></p>
+    Total: {{ cartService.getTotal() | currency: 'USD' }} <i class="bi bi-currency-dollar"></i>
   </h2>
 </div>
+

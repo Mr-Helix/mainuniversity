@@ -1,0 +1,37 @@
+
+.remove{
+    width: 150px;
+    text-align: center;
+
+    background-color: white !important;
+    border-radius: 5px;
+    color: red;
+}
+
+
+.buttons{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.buttons > button{
+    background-color: rgb(3, 71, 160);
+    border: none;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+}

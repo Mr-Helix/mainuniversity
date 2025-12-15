@@ -11,4 +11,9 @@ import { CommonModule } from '@angular/common';
 })
 export class CartComponent {
   constructor(public cartService: CartService) {}
+  
+  get total() {
+  return this.cartService.getTotal().toFixed(2);
+}
+
 }
