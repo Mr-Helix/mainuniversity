@@ -53,8 +53,56 @@ export class ProductService {
       price: 19.99,
       image: 'https://hatstore.imgix.net/8718526176117_1.jpg',
       description: 'Stylish Pokémon cap with an embroidered logo and adjustable strap. Lightweight, comfortable, and perfect for daily wear or completing a trainer-inspired look.'
-    }
-  ];
+    },
+  {
+    id: 7,
+    name: 'Pokémon Backpack',
+    category: 'Accessories',
+    price: 49.99,
+    image: 'https://m.media-amazon.com/images/I/91pi81Yz16L._AC_UY1000_.jpg',
+    description: 'Spacious Pokémon-themed backpack with multiple compartments. Ideal for school, travel, or carrying trading cards and accessories.'
+  },
+  {
+    id: 8,
+    name: 'Pokémon Mug',
+    category: 'Accessories',
+    price: 14.99,
+    image: 'https://m.media-amazon.com/images/I/71WUbwXIeAL._AC_UF894,1000_QL80_.jpg',
+    description: 'Ceramic Pokémon mug featuring colorful artwork. Microwave and dishwasher safe—perfect for coffee, tea, or hot chocolate.'
+  },
+  {
+    id: 9,
+    name: 'Pokémon Plush Toy – Pikachu',
+    category: 'Collectibles',
+    price: 24.99,
+    image: 'https://m.media-amazon.com/images/I/61AGWiL7NUL._AC_UF894,1000_QL80_.jpg',
+    description: 'Soft and cuddly Pikachu plush toy made from high-quality fabric. Great for collectors, kids, or as a decorative item.'
+  },
+  {
+    id: 10,
+    name: 'Pokémon Trading Card Sleeves (100 Pack)',
+    category: 'Cards',
+    price: 12.99,
+    image: 'https://kumacards.com/cdn/shop/products/P6192_290-80545_05.jpg?v=1614367841',
+    description: 'Protective Pokémon card sleeves designed to keep your cards safe from damage. Essential accessory for collectors and competitive players.'
+  },
+  {
+    id: 11,
+    name: 'Pokémon Phone Case',
+    category: 'Accessories',
+    price: 17.99,
+    image: 'https://m.media-amazon.com/images/I/91f8rI6eJ7L.jpg',
+    description: 'Durable Pokémon phone case with a sleek design and shock protection. Combines style and safety for everyday use.'
+  },
+  {
+    id: 12,
+    name: 'Pokémon Poster Set (3 Pack)',
+    category: 'Collectibles',
+    price: 21.99,
+    image: 'https://m.media-amazon.com/images/I/81xbw0dAlSL._AC_SL1500_.jpg',
+    description: 'High-quality Pokémon poster set featuring iconic characters and artwork. Perfect for decorating bedrooms, gaming rooms, or offices.'
+  }
+];
 
 
   getAll() {
