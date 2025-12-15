@@ -1,11 +1,20 @@
+.item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
 
 .remove{
-    width: 150px;
+    width: 125px;
     text-align: center;
 
-    background-color: white !important;
-    border-radius: 5px;
+    background-color: rgba(73, 73, 73, 0.1);
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
     color: red;
+
 }
 
 
@@ -25,6 +34,23 @@
     cursor: pointer;
 }
 
+.Checkout{
+    width: 45%;
+}
+.Total{
+    width: 45%;
+}
+
+.bot-info{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+    text-align: center;
+}
+
+
 @media (max-width: 600px) {
     .item{
         display: flex;
@@ -33,5 +59,11 @@
         text-align: center;
         flex-direction: column;
         gap: 20px;
+    }
+
+    .remove{
+        width: 50px;
+        height: 50px;
+        border-radius:100%
     }
 }
