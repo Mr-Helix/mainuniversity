@@ -1,22 +1,19 @@
 .item{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 15px 0;
-}
 
+    background-color: rgba(73, 73, 73, 0.777);
+
+}
 
 .remove{
     width: 125px;
+    height: 125PX;
     text-align: center;
 
-    background-color: rgba(73, 73, 73, 0.1);
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
     color: red;
 
 }
-
 
 .buttons{
     display: flex;
